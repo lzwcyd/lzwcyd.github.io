@@ -1,0 +1,49 @@
+name: 部署
+# 触发脚本的条件，develop分支push代码的时候
+on:
+  push:
+    branches:
+      - master
+
+# 要执行的任务
+jobs:
+  # 任务名称
+  build:
+    # runs-on 指定job任务运行所需要的虚拟机环境（必填）
+    runs-on: ubuntu-latest
+    # 任务步骤
+    steps:
+      # 获取源码
+      - name: Checkout
+        # 使用action库  actions/checkout获取源码
+        uses: actions/checkout@master
+
+      # 安装node
+      - name: 安装node.js
+        # 使用action库 actions/setup-node 安装node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 16.16.0
+
+      # 安装依赖
+      - name: 安装依赖
+        run: yarn
+
+      # 打包
+      - name: 打包
+        run: yarn docs:build
+
+      # 上传打包文件到远程服务器
+      - name: Deploy
+      # 因为构建之后，需要把代码上传到服务器上，所以需要连接到ssh，并且做一个拷贝操作
+      uses: cross-the-world/scp-pipeline@master
+      env:
+        WELCOME: "ssh scp ssh pipelines"
+        LASTSSH: "Doing something after copying"
+      with:
+        host: ${{ secrets.USER_HOST }}
+        user: ${{ secrets.USER_NAME }}
+        pass: ${{ secrets.USER_PASS }}
+        connect_timeout: 10s
+        local: './build/*'
+        remote: /home/build
