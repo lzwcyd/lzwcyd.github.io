@@ -3,6 +3,7 @@ import { defineConfig } from "vuepress/config";
 import moment from 'moment';
 
 export default defineConfig({
+    dest : 'build',
     themeConfig: {
         logo: "logo.jpg"
     },
@@ -11,7 +12,6 @@ export default defineConfig({
             '@vuepress/last-updated',
             {
                 transformer: (timestamp: any, lang: any) => {
-                    const moment = require('moment')
                     moment.locale(lang)
                     return moment(timestamp).fromNow()
                 }
