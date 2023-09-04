@@ -10,6 +10,7 @@ export default defineConfig({
             { text: 'Home', link: '/' },
             { text: 'Java', link: '/java/' },
             { text: 'Go', link: '/go/' },
+            { text: '旅行', link: '/travel/' },
             //   { text: 'About', link: 'https://google.com' },
             { text: 'Github', link: 'https://github.com/lzwcyd' },
         ],
