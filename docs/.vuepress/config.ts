@@ -19,8 +19,12 @@ export default defineConfig({
                 'springboot1',
                 'mysql'
             ],
-            'go': [
+            '/go/': [
                 ''
+            ],
+            '/travel/': [
+                '',
+                'suzhou'
             ]
         }
     },
