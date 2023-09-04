@@ -3,37 +3,37 @@ import { defineConfig } from "vuepress/config";
 import moment from 'moment';
 
 export default defineConfig({
-    dest : 'build',
+    dest: 'build',
     themeConfig: {
         lastUpdated: '上次更新',
         nav: [
-          { text: 'Home', link: '/' },
-          { text: 'Java', link: '/java/' },
-          { text: 'Go', link: '/go/' },
-        //   { text: 'About', link: 'https://google.com' },
-          { text: 'Github', link: 'https://github.com/lzwcyd' },
+            { text: 'Home', link: '/' },
+            { text: 'Java', link: '/java/' },
+            { text: 'Go', link: '/go/' },
+            //   { text: 'About', link: 'https://google.com' },
+            { text: 'Github', link: 'https://github.com/lzwcyd' },
         ],
         sidebar: {
-            '/java/' : [
+            '/java/': [
                 '',
                 'springboot1',
                 'mysql'
             ],
-            'go' : [
+            'go': [
                 ''
             ]
         }
-      },
+    },
     plugins: [
         [
             '@vuepress/last-updated'
             ,
-      {
-        transformer: (timestamp: any, lang: any) => {
-          moment.locale(lang)
-          return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
-        }
-      }
+            {
+                transformer: (timestamp: any, lang: any) => {
+                    moment.locale(lang)
+                    return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
+                }
+            }
         ],
         [
             '@vuepress/active-header-links',
