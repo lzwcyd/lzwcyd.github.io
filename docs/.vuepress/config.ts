@@ -5,8 +5,14 @@ import moment from 'moment';
 export default defineConfig({
     dest : 'build',
     themeConfig: {
-        logo: "logo.jpg"
-    },
+        nav: [
+          { text: 'Home', link: '/' },
+          { text: 'Java', link: '/java/' },
+          { text: 'Go', link: '/go/' },
+        //   { text: 'About', link: 'https://google.com' },
+          { text: 'Github', link: 'https://github.com/lzwcyd' },
+        ]
+      },
     plugins: [
         [
             '@vuepress/last-updated',
