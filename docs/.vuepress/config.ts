@@ -5,23 +5,28 @@ import moment from 'moment';
 export default defineConfig({
     dest : 'build',
     themeConfig: {
+        lastUpdated: '上次更新',
         nav: [
           { text: 'Home', link: '/' },
           { text: 'Java', link: '/java/' },
           { text: 'Go', link: '/go/' },
         //   { text: 'About', link: 'https://google.com' },
           { text: 'Github', link: 'https://github.com/lzwcyd' },
-        ]
+        ],
+        sidebar: {
+            '/java/' : [
+                '',
+                'springboot1',
+                'mysql'
+            ],
+            'go' : [
+                ''
+            ]
+        }
       },
     plugins: [
         [
-            '@vuepress/last-updated',
-            {
-                transformer: (timestamp: any, lang: any) => {
-                    moment.locale(lang)
-                    return moment(timestamp).fromNow()
-                }
-            }
+            '@vuepress/last-updated'
         ],
         [
             '@vuepress/active-header-links',
