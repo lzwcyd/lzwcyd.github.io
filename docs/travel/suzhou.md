@@ -11,6 +11,8 @@ next: hangzhou.md
 
 ## 金鸡湖
 
-![金鸡湖](https://img.lzwcyd.cn/img/202309041948813.jpg)
+![金鸡湖](https://img.lzwcyd.cn/img/202309041948813.jpg "金鸡湖-🚢")
+
+![金鸡湖-天空](https://img.lzwcyd.cn/IMG_2909.jpeg "金鸡湖-天空")
 
 ## 东方之门
