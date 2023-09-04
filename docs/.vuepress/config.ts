@@ -27,6 +27,13 @@ export default defineConfig({
     plugins: [
         [
             '@vuepress/last-updated'
+            ,
+      {
+        transformer: (timestamp: any, lang: any) => {
+          moment.locale(lang)
+          return moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
+        }
+      }
         ],
         [
             '@vuepress/active-header-links',
