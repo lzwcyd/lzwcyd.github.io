@@ -1,7 +1,6 @@
 ---
 home: true
 heroText: 忧离殇
-logo: /favicon.ico
 tagline: 大家好，欢迎来到我的个人空间
 lang: zh-CN
 features:
