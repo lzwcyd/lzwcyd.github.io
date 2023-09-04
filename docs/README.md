@@ -4,11 +4,11 @@ lang: zh-CN
 ---
 
 ## [Java](/java/)
----
-## [go](/go/)
----
+
+## [Go](/go/)
+
 ## [旅行](/travel/)
 
 ::: slot footer
-[粤ICP备2023098788号](https://beian.miit.gov.cn/)
+[粤 ICP 备 2023098788 号](https://beian.miit.gov.cn/)
 :::
