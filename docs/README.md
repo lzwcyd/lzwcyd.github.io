@@ -10,5 +10,5 @@ lang: zh-CN
 ## [旅行](/travel/)
 
 ::: slot footer
-[粤 ICP 备 2023098788 号](https://beian.miit.gov.cn/)
+[粤ICP备2023098788号-1](https://beian.miit.gov.cn/)
 :::
