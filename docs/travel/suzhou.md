@@ -16,3 +16,9 @@ next: hangzhou.md
 ![金鸡湖-天空](https://img.lzwcyd.cn/IMG_2909.jpeg "金鸡湖-天空")
 
 ## 东方之门
+
+
+
+::: slot footer
+[粤 ICP 备 2023098788 号](https://beian.miit.gov.cn/)
+:::

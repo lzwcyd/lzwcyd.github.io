@@ -6,3 +6,9 @@ next: springboot1.md
 # Java
 
 > 主要记录学习 Go 语言过程中遇到的问题以及相关解决方案
+
+
+
+::: slot footer
+[粤 ICP 备 2023098788 号](https://beian.miit.gov.cn/)
+:::

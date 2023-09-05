@@ -17,7 +17,7 @@ export default defineConfig({
       "/java/": ["", "springboot1", "mysql"],
       "/go/": [""],
       "/travel/": ["", "huzhou", "suzhou", "hangzhou"],
-    },
+    }
   },
   plugins: [
     [
@@ -36,6 +36,7 @@ export default defineConfig({
         headerAnchorSelector: ".header-anchor",
       },
     ],
+    ['@vuepress/back-to-top']
   ],
   locales: {
     "/": {
@@ -44,4 +45,5 @@ export default defineConfig({
       description: "忧离殇的个人主页",
     },
   },
+
 });
