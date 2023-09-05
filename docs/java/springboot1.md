@@ -86,3 +86,13 @@ upstream xx_manage {
     然后启动新的主服务。
 4. 停用备用服务
     然后停止备用服务，此时访问http://localhost/test，会自动切换成8080服务。
+
+
+
+
+
+
+
+::: slot footer
+[粤 ICP 备 2023098788 号](https://beian.miit.gov.cn/)
+:::
