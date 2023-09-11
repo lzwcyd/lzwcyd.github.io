@@ -14,6 +14,8 @@ next: false
 ![](https://img.lzwcyd.cn/img/202309061604395.jpg)
 
 ## 吃饭
+
+东北菜
 ![](https://img.lzwcyd.cn/img/202309061618574.jpg)
 
 ## 西湖
@@ -27,9 +29,10 @@ next: false
 
 ## 钱塘江
 
-
 合影
 ![](https://img.lzwcyd.cn/img/202309061619861.jpg)
 
-傍晚
-![](https://img.lzwcyd.cn/img/202309061619858.jpg)
+落日
+<video src="![](https://img.lzwcyd.cn/img/202309111828998.mp4)" controls>
+  你的浏览器不支持 <code>video</code> 标签。
+</video>
