@@ -33,6 +33,8 @@ next: false
 ![](https://img.lzwcyd.cn/img/202309061619861.jpg)
 
 落日
-<video src="![](https://img.lzwcyd.cn/img/202309111828998.mp4)" controls>
+<br>
+
+<video src="https://img.lzwcyd.cn/img/202309111828998.mp4" controls>
   你的浏览器不支持 <code>video</code> 标签。
 </video>
