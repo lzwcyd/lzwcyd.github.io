@@ -23,8 +23,13 @@ jobs:
       - name: 打包
         run: yarn docs:build
 
-      - name: Deploy
+      - name: Deploy to GitHub Pages Repository
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build/  # 或你的VuePress构建输出目录
+          publish_dir: ./build  # VuePress构建输出目录
+          external_repository: <username>/<deployment-repo>  # 部署仓库的用户名和仓库名
+          keep_files: true  # 保持部署仓库中的现有文件
+          user_name: 'GitHub Actions'
+          user_email: 'actions@github.com'
+          commit_message: 'Deploy VuePress site'
