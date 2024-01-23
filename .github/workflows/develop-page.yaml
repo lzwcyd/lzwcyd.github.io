@@ -3,7 +3,7 @@ name: Deploy VuePress Site to GitHub Pages
 on:
   push:
     branches:
-      - master  # 或你用于开发的分支名
+      - master
 
 jobs:
   build-and-deploy:
@@ -27,9 +27,9 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.PERSONAL_TOKEN }}
-          publish_dir: ./build  # VuePress构建输出目录
-          external_repository: lzwcyd/lzwcyd.github.io  # 部署仓库的用户名和仓库名
-          keep_files: true  # 保持部署仓库中的现有文件
+          publish_dir: ./build
+          external_repository: lzwcyd/lzwcyd.github.io
+          keep_files: true
           user_name: 'GitHub Actions'
           user_email: 'actions@github.com'
           commit_message: 'Deploy VuePress site'
