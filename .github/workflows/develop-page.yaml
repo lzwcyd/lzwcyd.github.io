@@ -26,7 +26,7 @@ jobs:
       - name: Deploy to GitHub Pages Repository
         uses: peaceiris/actions-gh-pages@v3
         with:
-          github_token: ${{ secrets.PERSONAL_TOKEN }}
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
           publish_dir: ./build
           external_repository: lzwcyd/lzwcyd.github.io
           keep_files: true
