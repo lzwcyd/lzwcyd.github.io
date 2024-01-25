@@ -11,12 +11,14 @@ export default defineConfig({
       { text: "Java", link: "/java/" },
       { text: "Go", link: "/go/" },
       { text: "旅行", link: "/travel/" },
+      { text: "想法/思考", link: "/idea/" },
       { text: "Github", link: "https://github.com/lzwcyd" },
     ],
     sidebar: {
       "/java/": ["", "springboot1", "mysql"],
       "/go/": [""],
       "/travel/": ["", "huzhou", "suzhou", "hangzhou"],
+      "/idea/": ["", "HarmonyOs"],
     }
   },
   plugins: [
