@@ -1,6 +1,9 @@
 ---
 home: true
 lang: zh-CN
+footer: '<a href="https://beian.miit.gov.cn/" target="_blank">备案号：粤ICP备2023098788号</a>'
+footerHtml: true 
+
 ---
 
 ## [Java](/java/)
@@ -10,7 +13,3 @@ lang: zh-CN
 ## [旅行](/travel/)
 
 ## [想法/观点](/idea/)
-
-::: slot footer
-[粤ICP备2023098788号](https://beian.miit.gov.cn/)
-:::
