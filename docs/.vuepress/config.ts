@@ -26,8 +26,8 @@ export default defineConfig({
     "@vuepress/last-updated",
     {
       transformer: (timestamp: any, lang: any) => {
-        moment.locale(lang);
-        return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
+        moment.locale(lang)
+          return moment(timestamp).fromNow()
       },
     },
   ],
