@@ -21,24 +21,30 @@ export default defineConfig({
       "/idea/": ["", "HarmonyOs"],
     }
   },
-  plugins: [
-    [
-      "@vuepress/last-updated",
-      {
-        transformer: (timestamp: any, lang: any) => {
-          moment.locale(lang);
-          return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
-        },
+  plugins: [['@vuepress/back-to-top', true],
+  [
+    "@vuepress/last-updated",
+    {
+      transformer: (timestamp: any, lang: any) => {
+        moment.locale(lang);
+        return moment(timestamp).format("YYYY-MM-DD HH:mm:ss");
       },
-    ],
-    [
-      "@vuepress/active-header-links",
-      {
-        sidebarLinkSelector: ".sidebar-link",
-        headerAnchorSelector: ".header-anchor",
-      },
-    ],
-    ['@vuepress/back-to-top']
+    },
+  ],
+  [
+    "@vuepress/active-header-links",
+    {
+      sidebarLinkSelector: ".sidebar-link",
+      headerAnchorSelector: ".header-anchor",
+    },
+  ], [
+    'vuepress-plugin-container',
+    {
+      type: 'vue',
+      before: '<pre class="vue-container"><code>',
+      after: '</code></pre>'
+    }
+  ]
   ],
   locales: {
     "/": {
