@@ -15,7 +15,7 @@ jobs:
       - name: 安装node.js
         uses: actions/setup-node@v1
         with:
-          node-version: 16.16.0
+          node-version: 20.11.0
 
       - name: 安装依赖
         run: yarn
