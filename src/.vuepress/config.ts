@@ -1,9 +1,8 @@
+import { defaultTheme } from '@vuepress/theme-default'
+import { defineUserConfig } from 'vuepress/cli'
+import { viteBundler } from '@vuepress/bundler-vite'
 
-
-
-import { defaultTheme } from 'vuepress'
-
-export default {
+export default defineUserConfig({
   dest: "build",
   theme: defaultTheme({
     lastUpdated: true,
@@ -23,9 +22,10 @@ export default {
   lang: "zh-CN",
   title: "忧离殇",
   description: "忧离殇的个人主页",
+  bundler: viteBundler(),
   footer: [
     // 其他底部内容
     '<a href="你的备案链接" target="_blank">备案号：XXXXXX</a>',
   ],
 
-}
+})
