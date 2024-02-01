@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   dest: "build",
@@ -27,5 +28,11 @@ export default defineUserConfig({
     // 其他底部内容
     '<a href="你的备案链接" target="_blank">备案号：XXXXXX</a>',
   ],
+  plugins : [
+    mdEnhancePlugin({
+      // 启用代码块分组
+      codetabs: true,
+    }),
+  ]
 
 })

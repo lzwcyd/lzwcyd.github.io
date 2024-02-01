@@ -28,7 +28,10 @@ https://zhuanlan.zhihu.com/p/620135485#
 ![](https://img.lzwcyd.cn/img/202402011725842.png)
 
 从[GitHUb](https://github.com/yonggekkk/Cloudflare-workers-pages-vless/blob/main/_worker.js),获取脚本内容
-``` JavaScript
+<Details>
+  <summary>点击展开查看脚本内容</summary>
+
+```javascript
 // <!--GAMFC-->version base on commit 43fad05dcdae3b723c53c226f8181fc5bd47223e, time is 2023-06-22 15:20:02 UTC<!--GAMFC-END-->.
 // @ts-ignore
 import { connect } from 'cloudflare:sockets';
@@ -850,6 +853,8 @@ function getVLESSConfig(userID, hostName) {
 	}
   }
 ```
+</Details>
+
 ![](https://img.lzwcyd.cn/img/202402011729819.png)
 
 - 点击 **保存并部署** 切记uuid要记录下来
