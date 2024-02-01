@@ -1,6 +1,6 @@
 ---
 prev: ./
-next: false
+next: ./chatgpt.md
 ---
 
 # 鸿蒙是什么？鸿蒙到底是不是自研的？
