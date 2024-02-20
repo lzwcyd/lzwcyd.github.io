@@ -14,6 +14,7 @@ export default defineUserConfig({
       },
       { text: "Go", link: "/go/" },
       { text: "旅行", link: "/travel/" },
+      { text: "阅读", link: "/read/"},
       { text: "想法/思考", link: "/idea/" }
     ],
     repo: "https://github.com/lzwcyd",
