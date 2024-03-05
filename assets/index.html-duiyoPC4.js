@@ -1,0 +1,1 @@
+import{_ as n,o as t,c as o,a as e}from"./app-BZii1ESa.js";const c={},s=e("h1",{id:"阅读",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#阅读"},[e("span",null,"阅读")])],-1),a=e("blockquote",null,[e("p",null,"主要记录一些阅读书籍后的感受和看法")],-1),_=[s,a];function l(r,d){return t(),o("div",null,_)}const h=n(c,[["render",l],["__file","index.html.vue"]]);export{h as default};

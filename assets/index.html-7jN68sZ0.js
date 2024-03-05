@@ -1,0 +1,1 @@
+import{_ as o,o as n,c as t,a as e}from"./app-BZii1ESa.js";const c={},s=e("h1",{id:"go",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#go"},[e("span",null,"Go")])],-1),a=e("blockquote",null,[e("p",null,"主要记录学习 Go 语言过程中遇到的问题以及相关解决方案")],-1),_=[s,a];function l(r,d){return n(),t("div",null,_)}const h=o(c,[["render",l],["__file","index.html.vue"]]);export{h as default};

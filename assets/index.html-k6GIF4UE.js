@@ -1,0 +1,1 @@
+import{_ as n,o as t,c as o,a as e}from"./app-BZii1ESa.js";const c={},s=e("h1",{id:"想法-个人观点",tabindex:"-1"},[e("a",{class:"header-anchor",href:"#想法-个人观点"},[e("span",null,"想法，个人观点")])],-1),a=e("blockquote",null,[e("p",null,"主要记录一些突发奇想，个人阅读的一些想法等；")],-1),_=[s,a];function l(r,d){return t(),o("div",null,_)}const h=n(c,[["render",l],["__file","index.html.vue"]]);export{h as default};
