@@ -25,10 +25,6 @@ export default defineUserConfig({
   title: "忧离殇",
   description: "忧离殇的个人主页",
   bundler: viteBundler(),
-  footer: [
-    // 其他底部内容
-    '<a href="你的备案链接" target="_blank">备案号：XXXXXX</a>',
-  ],
   plugins : [
     mdEnhancePlugin({
       // 启用代码块分组
