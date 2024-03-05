@@ -15,13 +15,13 @@ next: ./chatgpt.md
 如：
 <br/>
 [知乎](https://www.zhihu.com/question/622456000?utm_psn=1733452275388035072)
-![](https://img.lzwcyd.cn/img/202401241135213.png)
+![](https://img.woodli.io/img/202401241135213.png)
 <br/>
 [脉脉](https://maimai.cn/n/content/gossip-detail/33018396?egid=98f3c1cd197d4e9aade8ab2611a08d3e&gid=33018396&operation_id=p2bbswzXpnOdP2iaqiL6o&share_channel=5&share_euid=L5dCrsbXWEOWfokdX1FuTX9VwZOZ4b0VpFbhg1ILrWX4igrnvtPhv6vEwwMhnG4RV4vB4riWyb-fYJ6UGRm9jg)
-![](https://img.lzwcyd.cn/img/202401241126031.png)
+![](https://img.woodli.io/img/202401241126031.png)
 <br/>
 [微博](https://weibo.com/3626485974/4989237592064898)
-![](https://img.lzwcyd.cn/img/202401241138594.png)
+![](https://img.woodli.io/img/202401241138594.png)
 
 各执一词，有吹捧的，有骂鸿蒙为哄蒙的等等......
 
@@ -33,7 +33,7 @@ next: ./chatgpt.md
 [鸿蒙官网](https://www.harmonyos.com/)全称华为HarmonyOS智能终端操作系统官网，从官网上并没有直接找到关于鸿蒙是什么的定义；
 [OpenHarmony官网](https://www.openharmony.cn/)关于OpenHarmony的定义为：OpenHarmony是由开放原子开源基金会（OpenAtom Foundation）孵化及运营的开源项目,
 目标是面向全场景、全连接、全智能时代、基于开源的方式，搭建一个智能终端设备操作系统的框架和平台，促进万物互联产业的繁荣发展
-![](https://img.lzwcyd.cn/img/202401241155536.png)
+![](https://img.woodli.io/img/202401241155536.png)
 
 ### 3.2 是否有明确到底是手机鸿蒙还是OpenHarmony？
 

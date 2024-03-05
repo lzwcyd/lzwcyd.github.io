@@ -23,9 +23,9 @@ https://zhuanlan.zhihu.com/p/620135485#
 
 - 在cloudflare管理台页面，选择Workers 和 Pages 
 - 点击创建应用程序，然后点击 **创建Worker** ，名称随意命名
-![](https://img.lzwcyd.cn/img/202402011724243.png)
+![](https://img.woodli.io/img/202402011724243.png)
 - 点击部署，然后点击 **编辑代码** 
-![](https://img.lzwcyd.cn/img/202402011725842.png)
+![](https://img.woodli.io/img/202402011725842.png)
 
 从[GitHUb](https://github.com/yonggekkk/Cloudflare-workers-pages-vless/blob/main/_worker.js),获取脚本内容
 <Details>
@@ -855,17 +855,17 @@ function getVLESSConfig(userID, hostName) {
 ```
 </Details>
 
-![](https://img.lzwcyd.cn/img/202402011729819.png)
+![](https://img.woodli.io/img/202402011729819.png)
 
 - 点击 **保存并部署** 切记uuid要记录下来
 - 回到workers 和 Pages中，点击你刚刚创建的Worker ，点击添加自定义域
-![](https://img.lzwcyd.cn/img/202402011733419.png)
+![](https://img.woodli.io/img/202402011733419.png)
 输入你自定义的域名地址，例如，chatgpt-proxy.test.online, test.online为你之前添加进入cloudflare的域名
-![](https://img.lzwcyd.cn/img/202402011734246.png)
+![](https://img.woodli.io/img/202402011734246.png)
 点击添加自定义域，等待1-3分钟
 访问你刚刚的自定义域名地址+"/"+uuid, 例如：https://chatgpt-proxy.test.online/77a571fb-4fd2-4b37-8596-1b7d9728bb5c
 内容如下：
-![](https://img.lzwcyd.cn/img/202402011737516.png)
+![](https://img.woodli.io/img/202402011737516.png)
 复制 vless://开头的文本
 
 ### 1.4 下载v2rayN
@@ -876,9 +876,9 @@ function getVLESSConfig(userID, hostName) {
 
 打开v2rayN
 点击服务器选择从剪切板导入批量URL
-![](https://img.lzwcyd.cn/img/202402011740253.png)
+![](https://img.woodli.io/img/202402011740253.png)
 选择代理模式
-![](https://img.lzwcyd.cn/img/202402011742289.png)
+![](https://img.woodli.io/img/202402011742289.png)
 
 此时即可访问Google
 

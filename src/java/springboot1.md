@@ -37,19 +37,19 @@ public class TestController {
 
 8080端口（旧版本）
 
-![](https://img.lzwcyd.cn/img/202309042006638.png)
+![](https://img.woodli.io/img/202309042006638.png)
 
 请求结果：
 
-![](https://img.lzwcyd.cn/img/202309042010924.png)
+![](https://img.woodli.io/img/202309042010924.png)
 
 8081端口（新版本）
 
-![](https://img.lzwcyd.cn/img/202309042010802.png)
+![](https://img.woodli.io/img/202309042010802.png)
 
 请求结果：
 
-![](https://img.lzwcyd.cn/img/202309042009451.png)
+![](https://img.woodli.io/img/202309042009451.png)
 
 1. 配置Nginx
 
