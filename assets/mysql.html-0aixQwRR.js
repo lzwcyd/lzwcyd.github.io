@@ -1,0 +1,1 @@
+const a=JSON.parse('{"key":"v-ad9be12a","path":"/java/mysql.html","title":"MySQL","lang":"zh-CN","frontmatter":{"prev":"springboot1.md","next":false},"headers":[],"git":{"updatedTime":1706583363000,"contributors":[{"name":"woodli","email":"woodli@lexin.com","commits":1}]},"filePathRelative":"java/mysql.md"}');export{a as data};

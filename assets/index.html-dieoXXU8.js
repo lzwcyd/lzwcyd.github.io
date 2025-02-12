@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-2a6ed73c","path":"/travel/","title":"旅行","lang":"zh-CN","frontmatter":{"lang":"zh-CN","next":"suzhou.md"},"headers":[],"git":{"updatedTime":1706583624000,"contributors":[{"name":"woodli","email":"woodli@lexin.com","commits":2}]},"filePathRelative":"travel/README.md"}');export{e as data};

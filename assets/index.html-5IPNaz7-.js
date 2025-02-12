@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-1538da00","path":"/read/","title":"阅读","lang":"zh-CN","frontmatter":{"lang":"zh-CN","next":"livingWithBigGaps.md"},"headers":[],"git":{"updatedTime":1708415377000,"contributors":[{"name":"woodli","email":"woodli@lexin.com","commits":1}]},"filePathRelative":"read/README.md"}');export{e as data};

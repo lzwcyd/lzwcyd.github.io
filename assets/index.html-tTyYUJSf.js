@@ -1,0 +1,1 @@
+const e=JSON.parse('{"key":"v-14b9a0bf","path":"/idea/","title":"想法，个人观点","lang":"zh-CN","frontmatter":{"lang":"zh-CN","next":"HarmonyOs.md"},"headers":[],"git":{"updatedTime":1706583363000,"contributors":[{"name":"woodli","email":"woodli@lexin.com","commits":1}]},"filePathRelative":"idea/README.md"}');export{e as data};
