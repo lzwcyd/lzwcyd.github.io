@@ -22,8 +22,8 @@ export default defineUserConfig({
     editLink: false,
   }),
   lang: "zh-CN",
-  title: "忧离殇",
-  description: "忧离殇的个人主页",
+  title: "wood",
+  description: "wood的个人主页",
   bundler: viteBundler(),
   plugins : [
     mdEnhancePlugin({
