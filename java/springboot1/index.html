@@ -1,0 +1,69 @@
+<!DOCTYPE html><html lang="zh-CN" data-astro-cid-37fxchfa> <head><meta charset="UTF-8"><meta name="description" content="wood的个人主页"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v4.16.19"><title>SpringBoot项目实现不停机更新</title><style>:root{--primary-color: #0066cc;--text-color: #333;--bg-color: #fff;--border-color: #eee}body{font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,sans-serif;line-height:1.6;color:var(--text-color);background:var(--bg-color)}article{max-width:800px;margin:0 auto;padding:2rem}article h1{margin-bottom:2rem;border-bottom:2px solid var(--border-color);padding-bottom:1rem}article h2{margin-top:2rem;margin-bottom:1rem}article p{margin-bottom:1rem}article pre{background:#f8f9fa;padding:1rem;border-radius:4px;overflow-x:auto}article code{background:#f8f9fa;padding:.2rem .4rem;border-radius:3px;font-size:.9rem}article pre code{background:none;padding:0}article img{max-width:100%;height:auto;border-radius:4px}article ul,article ol{margin-bottom:1rem;padding-left:2rem}article li{margin-bottom:.5rem}article blockquote{border-left:4px solid var(--primary-color);padding-left:1rem;margin:1rem 0;color:#666}nav[data-astro-cid-37fxchfa]{padding:1rem;background:#f8f9fa;display:flex;gap:1rem;justify-content:center}nav[data-astro-cid-37fxchfa] a[data-astro-cid-37fxchfa]{text-decoration:none;color:#333;padding:.5rem 1rem;border-radius:4px}nav[data-astro-cid-37fxchfa] a[data-astro-cid-37fxchfa]:hover{background:#e9ecef}main[data-astro-cid-37fxchfa]{max-width:800px;margin:0 auto;padding:2rem}footer[data-astro-cid-37fxchfa]{text-align:center;padding:2rem;color:#666}
+</style></head> <body data-astro-cid-37fxchfa> <nav data-astro-cid-37fxchfa> <a href="/" data-astro-cid-37fxchfa>首页</a> <a href="/blog" data-astro-cid-37fxchfa>博客</a> <a href="/java" data-astro-cid-37fxchfa>Java</a> <a href="/go" data-astro-cid-37fxchfa>Go</a> <a href="/travel" data-astro-cid-37fxchfa>旅行</a> <a href="/read" data-astro-cid-37fxchfa>阅读</a> <a href="/idea" data-astro-cid-37fxchfa>想法</a> </nav> <main data-astro-cid-37fxchfa>  <article> <h1>SpringBoot项目实现不停机更新</h1> <h1 id="springboot项目实现不停机更新">SpringBoot项目实现不停机更新</h1>
+<h2 id="思路">思路</h2>
+<p>通过Nginx的负载均衡策略实现不停机方案</p>
+<h2 id="行动">行动</h2>
+<p>假设原SpringBoot项目使用8080端口，备用服务使用8081端口</p>
+<p>demo就写个简单的示例</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="java"><code><span class="line"><span style="color:#E1E4E8">@</span><span style="color:#F97583">RestController</span></span>
+<span class="line"><span style="color:#F97583">public</span><span style="color:#F97583"> class</span><span style="color:#B392F0"> TestController</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    @</span><span style="color:#F97583">Autowired</span></span>
+<span class="line"><span style="color:#E1E4E8">    Environment environment;</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">    public</span><span style="color:#E1E4E8"> String </span><span style="color:#B392F0">getPort</span><span style="color:#E1E4E8">(){</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#E1E4E8"> environment.</span><span style="color:#B392F0">getProperty</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"local.server.port"</span><span style="color:#E1E4E8">);</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">    @</span><span style="color:#F97583">GetMapping</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">"/test"</span><span style="color:#E1E4E8">)</span></span>
+<span class="line"><span style="color:#F97583">    public</span><span style="color:#E1E4E8"> String </span><span style="color:#B392F0">test</span><span style="color:#E1E4E8">() {</span></span>
+<span class="line"><span style="color:#F97583">        return</span><span style="color:#9ECBFF"> "端口号: "</span><span style="color:#F97583"> +</span><span style="color:#B392F0">  getPort</span><span style="color:#E1E4E8">();</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<p>8080端口（旧版本）</p>
+<p><img src="https://img.woodli.io/img/202309042006638.png" alt=""></p>
+<p>请求结果：</p>
+<p><img src="https://img.woodli.io/img/202309042010924.png" alt=""></p>
+<p>8081端口（新版本）</p>
+<p><img src="https://img.woodli.io/img/202309042010802.png" alt=""></p>
+<p>请求结果：</p>
+<p><img src="https://img.woodli.io/img/202309042009451.png" alt=""></p>
+<ol>
+<li>配置Nginx</li>
+</ol>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="xml"><code><span class="line"><span style="color:#E1E4E8">location /xx {</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_read_timeout 600;</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_pass http://xx_manage; ##这个地方配置了负载均衡</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_set_header Host $host;</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_set_header X-Real-IP $remote_addr;</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_set_header REMOTE-HOST $remote_addr;</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;</span></span>
+<span class="line"><span style="color:#E1E4E8">            proxy_next_upstream error timeout http_500 http_404 http_502 http_503  non_idempotent;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"><span style="color:#E1E4E8"># server外层</span></span>
+<span class="line"><span style="color:#E1E4E8">upstream xx_manage {</span></span>
+<span class="line"><span style="color:#E1E4E8">    server 127.0.0.1:8080;</span></span>
+<span class="line"><span style="color:#E1E4E8">    server 127.0.0.1:8081;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span></code></pre>
+<ol start="2">
+<li>
+<p>启用备用服务</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="shell"><code><span class="line"><span style="color:#B392F0">java</span><span style="color:#79B8FF"> -jar</span><span style="color:#9ECBFF"> .</span><span style="color:#79B8FF">\d</span><span style="color:#9ECBFF">emoTest-8081.jar</span></span>
+<span class="line"></span></code></pre>
+<p>此时访问<a href="http://localhost/test">http://localhost/test</a></p>
+<p>会轮询返回8080和8081服务的结果</p>
+</li>
+<li>
+<p>更新主服务
+先停止主服务，此时访问<a href="http://localhost/test%EF%BC%8C%E4%BC%9A%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E6%88%908081%E6%9C%8D%E5%8A%A1%EF%BC%8C%E6%AD%A4%E6%97%B6%E4%BF%9D%E8%AF%81%E4%BA%86%E6%9C%8D%E5%8A%A1%E4%B8%8D%E4%BC%9A%E4%B8%AD%E6%96%AD%E3%80%82">http://localhost/test，会自动切换成8081服务，此时保证了服务不会中断。</a>
+然后启动新的主服务。</p>
+</li>
+<li>
+<p>停用备用服务
+然后停止备用服务，此时访问<a href="http://localhost/test%EF%BC%8C%E4%BC%9A%E8%87%AA%E5%8A%A8%E5%88%87%E6%8D%A2%E6%88%908080%E6%9C%8D%E5%8A%A1%E3%80%82">http://localhost/test，会自动切换成8080服务。</a></p>
+</li>
+</ol> </article>  </main> <footer data-astro-cid-37fxchfa> <p data-astro-cid-37fxchfa>© 2024 wood的个人主页</p> </footer> </body></html>
