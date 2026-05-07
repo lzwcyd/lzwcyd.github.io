@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('java');
+---
+
+<BaseLayout title="Java 技术文章">
+  <h1>Java 技术文章</h1>
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={`/java/${post.slug}`}>
+          {post.data.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>

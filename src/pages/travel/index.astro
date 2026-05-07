@@ -1,0 +1,19 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('travel');
+---
+
+<BaseLayout title="旅行记录">
+  <h1>旅行记录</h1>
+  <ul>
+    {posts.map((post) => (
+      <li>
+        <a href={`/travel/${post.slug}`}>
+          {post.data.title}
+        </a>
+      </li>
+    ))}
+  </ul>
+</BaseLayout>
