@@ -1,0 +1,5 @@
+
+User-agent: *
+Allow: /
+
+Sitemap: https://lzwcyd.github.io/sitemap-index.xml
