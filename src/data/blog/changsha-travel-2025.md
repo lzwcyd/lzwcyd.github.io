@@ -29,8 +29,7 @@ description: "2025年12月长沙两日游记，打卡橘子洲、岳麓书院、
 
 ### 橘子洲打卡
 
-<!-- 请上传照片到 R2 并替换下面的链接 -->
-<!-- ![橘子洲](https://img.woodli.io/img/changsha-juzizhou.jpg) -->
+![橘子洲](https://img.woodli.io/img/changsha-juzizhou.jpg)
 
 冬日的橘子洲，游客不多，正好可以慢慢逛。花 21.97 元坐了单程小火车，省了不少脚力。在洲上买了两瓶水（3.92 元），沿着湘江边走边看，感受"独立寒秋，湘江北去"的意境。
 
@@ -47,8 +46,7 @@ description: "2025年12月长沙两日游记，打卡橘子洲、岳麓书院、
 
 晚餐选择了当地有名的"壹盏灯"，点了几个招牌菜，花费 151 元。湘菜的辣，是真的辣，但也是真的香！
 
-<!-- 请上传照片到 R2 并替换下面的链接 -->
-<!-- ![壹盏灯](https://img.woodli.io/img/changsha-yizhandeng.jpg) -->
+![壹盏灯](https://img.woodli.io/img/changsha-yizhandeng.jpg)
 
 ### 夜宿洗浴中心
 
@@ -58,8 +56,7 @@ description: "2025年12月长沙两日游记，打卡橘子洲、岳麓书院、
 
 ### 岳麓书院
 
-<!-- 请上传照片到 R2 并替换下面的链接 -->
-<!-- ![岳麓书院](https://img.woodli.io/img/changsha-yuelu-academy.jpg) -->
+![岳麓书院](https://img.woodli.io/img/changsha-yuelu-academy.jpg)
 
 第二天一早来到岳麓山，先参观了岳麓书院（门票 40 元 + 讲解 10 元）。千年学府，弦歌不绝，感受湖湘文化的深厚底蕴。
 
@@ -74,13 +71,11 @@ description: "2025年12月长沙两日游记，打卡橘子洲、岳麓书院、
 
 在山顶喝着啤酒，俯瞰长沙城，这种感觉太棒了！
 
-<!-- 请上传照片到 R2 并替换下面的链接 -->
-<!-- ![岳麓山顶](https://img.woodli.io/img/changsha-yuelu-peak.jpg) -->
+![岳麓山顶](https://img.woodli.io/img/changsha-yuelu-peak.jpg)
 
 ### 开福寺祈福
 
-<!-- 请上传照片到 R2 并替换下面的链接 -->
-<!-- ![开福寺](https://img.woodli.io/img/changsha-kaifu-temple.jpg) -->
+![开福寺](https://img.woodli.io/img/changsha-kaifu-temple.jpg)
 
 下山后去了开福寺（门票 10 元），古刹清幽，香火鼎盛。在这里许下新年的愿望，愿一切顺遂。
 
