@@ -1,0 +1,76 @@
+/* 全局样式 */
+:root {
+  --primary-color: #0066cc;
+  --text-color: #333;
+  --bg-color: #fff;
+  --border-color: #eee;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+article {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+article h1 {
+  margin-bottom: 2rem;
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 1rem;
+}
+
+article h2 {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+article p {
+  margin-bottom: 1rem;
+}
+
+article pre {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  overflow-x: auto;
+}
+
+article code {
+  background: #f8f9fa;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+}
+
+article pre code {
+  background: none;
+  padding: 0;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+}
+
+article ul, article ol {
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+article li {
+  margin-bottom: 0.5rem;
+}
+
+article blockquote {
+  border-left: 4px solid var(--primary-color);
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #666;
+}
