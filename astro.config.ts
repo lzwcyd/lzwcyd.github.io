@@ -58,7 +58,6 @@ export default defineConfig({
     },
   },
   experimental: {
-    preserveScriptOrder: true,
     // 注释掉Google字体配置，避免网络连接问题
     // fonts: [
     //   {
