@@ -91,20 +91,6 @@ description: "2025→2026 跨年南昌48h｜瓦罐汤的热气、拌粉的辣、
 
 王勃一千多年前写下的句子，至今仍是南昌最好的名片。虽然没上楼，但远远看着这座千年名楼矗立在赣江边上，已经足够。
 
-### 🌊 赣江边｜跨年夜的江风
-
-![赣江边1](https://img.woodli.io/img/nanchang/photo_new7.jpg)
-
-南昌依赣江而建，跨年夜沿着江边走了一段。
-
-![赣江边2](https://img.woodli.io/img/nanchang/photo_new8.jpg)
-
-江风吹过来，带着冬天的凉意，但看着对岸的灯火，心情反而平静了。
-
-![赣江边3](https://img.woodli.io/img/nanchang/photo_new9.jpg)
-
-> 一座有江的城市，总归不会太差。
-
 ### 🏛️ 江西省博物馆｜偶遇米芾真迹
 
 ![米芾字画](https://img.woodli.io/img/nanchang/photo_new6.jpg)
@@ -153,9 +139,15 @@ description: "2025→2026 跨年南昌48h｜瓦罐汤的热气、拌粉的辣、
 
 ### 🌊 朝阳江滩公园｜赣江边最后一眼
 
+![赣江边1](https://img.woodli.io/img/nanchang/photo_new7.jpg)
+
 离开前，打车去了**朝阳江滩公园**，沿着赣江边走了走。
 
+![赣江边2](https://img.woodli.io/img/nanchang/photo_new8.jpg)
+
 看着江水缓缓流淌，对岸的城市天际线在冬日的阳光下清晰可见。南昌的最后一眼，留给了这条江。
+
+![赣江边3](https://img.woodli.io/img/nanchang/photo_new9.jpg)
 
 > **有江的城市，总想再来看看。**
 
